@@ -1,0 +1,407 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+:root
+{
+    --bgColor: #fff;
+    --color: #000;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/*? --------designing starts-------- ?*/
+
+#minicircle
+{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bounding
+{
+    width: fit-content;
+    overflow: hidden;
+}
+
+*/ .bounding .boundingelem
+{
+    transform: translateY(100%);
+}
+
+#main
+{
+    width: 100%;
+    background-color: black;
+}
+
+#hero
+{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #ce5ed0;
+}
+
+#nav p
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #ce5ed0;
+
+    & > span
+    {
+        color: #7cd178;
+    }
+}
+
+#heading
+{
+    margin-top: 9rem;
+}
+
+#heading h1
+{
+    margin-left: 3rem;
+    opacity: 0.6;
+    line-height: 1;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#heading #secondh1
+{
+    margin-left: 23rem;
+}
+
+.blocktext
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+
+.blocktext h5
+{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: right !important;
+}
+
+#chhotiheadings
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 4vh 2vw;
+    right: 2vw;
+    /* right: 2vw;
+                    bottom: 3vh;
+                margin-top: 100px; */
+    padding-right: 5rem;
+}
+
+#chhotiheadings h5
+{
+    text-transform: uppercase;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    text-align: right;
+}
+
+#herofooter
+{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#herofooter a
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter #iconset
+{
+    display: flex;
+    gap: .5rem;
+}
+
+#herofooter .circle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#second
+{
+    color: #fff;
+    padding-right: 10vw;
+    padding-top: 20rem;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.elem
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+
+.elem h1
+{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: 0.7;
+}
+
+.elemlast
+{
+    border-bottom: 1px solid #888;
+}
+
+.elem img
+{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#about
+{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: #fff;
+    padding: 50vh 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+
+#textabout >
+{
+    width: 40rem;
+}
+
+#textabout > h5
+{
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+#textabout p
+{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#about img
+{
+    width: 22rem;
+}
+
+#textabout h3 a
+{
+    padding: 1.2rem 2.2rem;
+    border: 1px solid #fff;
+    border-radius: 10rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    &:hover
+    {
+        background-color: #fff;
+        color: #000;
+        transition: all ease 1.2s;
+    }
+}
+
+/* for hover anime */
+/* #textabout > .hover-effect > h3{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-weight: 500;
+    color: #fff;
+    transform: all ease .8s;
+    text-align: center;
+    font-size: 14px;
+}
+
+#textabout > .hover-effect >  h3::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    bottom: -100%;
+    border-radius: 15vw;
+    transform: all ease .8s;
+}
+#textabout > .hover-effect > h3:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#textabout > .hover-effect > h3 > a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    z-index: 99;
+}
+#textabout > .hover-effect > h3:hover > a{
+    color: #000;
+}
+#textabout > .hover-effect > h3 > a:hover{
+    color: #000;
+} */
+/* for hove animate */
+
+#subscribe
+{
+    color: #fff;
+    padding: 2rem 3rem;
+    padding-bottom: 7vw;
+    background-color: black;
+}
+
+#subscribe h5
+{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+#subscribe h3
+{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+#footer
+{
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+}
+
+#footerleft
+{
+    display: flex;
+    gap: 2rem;
+}
+
+#footerright
+{
+    display: flex;
+    gap: 3rem;
+}
+
+#footer a
+{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar
+{
+    height: 35rem;
+    width: 30rem;
+    background-color: pink;
+    position: absolute;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+
+    & > a
+    {
+        color: var(--color);
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 936px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+}
